@@ -11,23 +11,20 @@ body {
 }
 
 .header_section {
-  height: 92px;
   background-color: #3c3a39;
+  height: 92px;
   position: relative;
   display: flex;
 }
 
 #unicon {
   position: absolute;
-  left: 323px;
-  right: 19px;
-  top: 63px;
-  bottom: 16px;
+  inset: 63px 19px 16px 323px;
 }
 
 .headline_section {
-  height: 590px;
   background-color: #1c1a19;
+  height: 590px;
   position: relative;
   display: flex;
 }
@@ -40,8 +37,49 @@ body {
   font-size: 18px;
   line-height: 19px;
   text-align: center;
-  top: 56px;
-  right: 240px;
-  left: 24px;
-  bottom: 12px;
+  inset: 56px 240px 12px 24px;
+}
+
+#bkg_illustrations {
+  position: absolute;
+  inset: 316px 0 0 243px;
+}
+
+.social_media {
+  position: absolute;
+  inset: 430px 0 0 24px;
+}
+
+#primary_text {
+  color: #ff6b00;
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  position: absolute;
+  inset: 120px 0 0 24px;
+}
+
+#supporting_text {
+  color: #fff5e1;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  position: absolute;
+  inset: 256px 0 0 24px;
+}
+
+#description {
+  color: #fff;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  position: absolute;
+  inset: 295px 0 0 24px;
 }
