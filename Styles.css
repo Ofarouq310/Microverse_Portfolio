@@ -52,7 +52,7 @@ body {
 
 #primary_text {
   color: #ff6b00;
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -64,7 +64,7 @@ body {
 
 #supporting_text {
   color: #fff5e1;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -75,7 +75,7 @@ body {
 
 #description {
   color: #fff;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
