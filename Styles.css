@@ -4,8 +4,6 @@
 }
 
 body {
-  width: 375px;
-  height: 6968px;
   margin-right: 486.5px;
   margin-left: 486.5px;
 }
@@ -24,6 +22,9 @@ body {
 
 .headline_section {
   background-color: #1c1a19;
+  background-image: url(Sources/Group.png);
+  background-repeat: no-repeat;
+  background-position: 244px 322px;
   height: 590px;
   position: relative;
   display: flex;
@@ -36,6 +37,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 19px;
+  text-decoration: none;
   text-align: center;
   inset: 56px 240px 12px 24px;
 }
@@ -48,6 +50,11 @@ body {
 .social_media {
   position: absolute;
   inset: 430px 0 0 24px;
+  list-style: none;
+}
+
+.social_media li {
+  display: inline;
 }
 
 #primary_text {
