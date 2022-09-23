@@ -4,8 +4,7 @@
 }
 
 body {
-  margin-right: 486.5px;
-  margin-left: 486.5px;
+  position: relative;
 }
 
 .header_section {
@@ -13,11 +12,20 @@ body {
   height: 92px;
   position: relative;
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 #unicon {
-  position: absolute;
+  position: relative;
   inset: 63px 19px 16px 323px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  
 }
 
 .headline_section {
@@ -25,9 +33,14 @@ body {
   background-image: url(Sources/Group.png);
   background-repeat: no-repeat;
   background-position: 244px 322px;
+  background-attachment: fixed;
   height: 590px;
   position: relative;
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 120px 140px 0 24px;
+  gap: 20px;
 }
 
 #name {
@@ -38,23 +51,62 @@ body {
   font-size: 18px;
   line-height: 19px;
   text-decoration: none;
-  text-align: center;
   inset: 56px 240px 12px 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-#bkg_illustrations {
-  position: absolute;
-  inset: 316px 0 0 243px;
-}
 
 .social_media {
-  position: absolute;
   inset: 430px 0 0 24px;
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: none;
+order: 3;
+flex-grow: 0;
 }
 
 .social_media li {
   display: inline;
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+
+}
+#github{
+  flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+#link{
+  flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+#angel{
+  flex: none;
+order: 2;
+flex-grow: 0;
+}
+
+#twitter{
+  flex: none;
+order: 3;
+flex-grow: 0
+}
+
+#medium{
+  flex: none;
+order: 4;
+flex-grow: 0;
 }
 
 #primary_text {
@@ -65,8 +117,6 @@ body {
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.37px;
-  position: absolute;
-  inset: 120px 0 0 24px;
 }
 
 #supporting_text {
@@ -76,17 +126,21 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-  position: absolute;
-  inset: 256px 0 0 24px;
+  display: flex;
+  align-items: center;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 #description {
-  color: #fff;
+  color: #fff5e1;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  position: absolute;
-  inset: 295px 0 0 24px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
