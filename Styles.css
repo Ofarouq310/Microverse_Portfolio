@@ -12,15 +12,14 @@ body {
 /* Button interaction styling */
 
 .button_interactions:hover {
+  background-color: #ffe3d3ef;
   color: #f55800;
-}
-
-.button_interactions:active {
-  color: #f4f1f0;
+  border: 1px solid #f55800;
 }
 
 .button_interactions:focus {
-  color: rgb(196, 180, 180);
+  color: rgb(226, 223, 223);
+  background-color: #f55800;
 }
 
 /* Header Section */
@@ -327,15 +326,15 @@ body {
   color: white;
 }
 
-.list_header {
-  padding-bottom: 45px;
-}
-
 .skills_list {
   padding-bottom: 45px;
 }
 
+.skills_list ul {
+  padding-bottom: 100px;
+}
+
 .skills_list li {
   list-style: none;
-  padding-bottom: 45px;
+  padding-top: 40px;
 }
