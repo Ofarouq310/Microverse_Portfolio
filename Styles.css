@@ -170,9 +170,6 @@ body {
   width: 297px;
   height: 40px;
   list-style: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   padding-bottom: 12px;
   gap: 12px;
 }
@@ -180,6 +177,8 @@ body {
 .project1_box {
   border: 1px solid #8993a4;
   padding: 10px 12px;
+  float: right;
+  margin-right: 10px;
 }
 
 .project1_button {
