@@ -227,14 +227,14 @@ body {
 
 .projects_tag_box {
   list-style: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+    
   padding: 12px 0 12px 16px;
   gap: 12px;
 }
 
 .projects_box {
+  float: right;
+  margin: 2px;
   padding: 10px 12px;
   background-color: rgba(255, 255, 255, 0.24);
   color: white;
