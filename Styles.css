@@ -9,6 +9,10 @@ body {
   position: relative;
 }
 
+#wrapper {
+  overflow: hidden;
+}
+
 /* Button interaction styling */
 
 .button_interactions:hover {
@@ -29,7 +33,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding: 12px 24px;
 }
 
@@ -40,9 +44,27 @@ body {
   font-size: 18px;
   line-height: 19px;
   text-decoration: none;
+  padding-left: 150px;
 }
 
-#unicon {
+#nav_list {
+  color: #ffffff;
+  list-style: none;
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 20px;
+display: flex;
+align-items: center;
+padding-right: 150px;
+}
+
+#nav_list li{
+  padding: 0px 32px 0px 0;
+}
+
+#mail_icon{
   padding-top: 4px;
 }
 
@@ -50,14 +72,14 @@ body {
 
 .headline_section {
   background-color: #1c1a19;
-  background-image: url(Sources/Group.png);
+  background-image: url(Sources/Desktop/Illustration-header.png);
   background-repeat: no-repeat;
   background-position: bottom right;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 120px 24px 0 24px;
-  gap: 20px;
+  padding: 192px 600px 250px 160px;
+  gap: 24px;
 }
 
 #primary_text {
@@ -65,44 +87,39 @@ body {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 56px;
-  line-height: 64px;
-  letter-spacing: 0.37px;
+  font-size: 69px;
+  line-height: 82px;
 }
 
 #supporting_text {
   color: #fff5e1;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 44px;
 }
 
 #description {
   color: #fff5e1;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 19px;
+  line-height: 32px;
+  padding-right: 60px;
+}
+
+#socialm_container{
+  position: absolute;
+  left: 36px;
+  top: 351px;
 }
 
 .social_media {
-  inset: 430px 0 0 24px;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex: none;
-  order: 3;
-  flex-grow: 0;
-  padding-bottom: 130px;
+  list-style: none;  
 }
 
-.social_media li {
-  display: inline;
-}
 
 /* Work Section */
 
@@ -200,7 +217,7 @@ body {
 /* Styles for the rest projects */
 
 .projects {
-  background-image: url(Sources/Img\ Placeholder2.png);
+  background-image: url(Sources/Mobile/Img\ Placeholder2.png);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -265,7 +282,7 @@ body {
   align-items: flex-start;
   padding: 120px 24px;
   gap: 24px;
-  background-image: url(Sources/Frame.png);
+  background-image: url(Sources/Mobile/Frame.png);
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 65%;
@@ -337,4 +354,98 @@ body {
 .skills_list li {
   list-style: none;
   padding-top: 40px;
+}
+
+/* Contact Me Section */
+
+.contact_me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 120px 24px 0 24px;
+}
+
+#contact_section_heading {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+}
+
+#form {
+  color: #979493;
+  padding: 80px 24px 80px 24px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input {
+  margin-bottom: 24px;
+  height: 48px;
+  text-align: left;
+  padding-left: 10px;
+  border: none;
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.438);
+}
+
+#form textarea {
+  padding-top: 10px;
+  background-color: #fbf8f7;
+  border: none;
+  height: 114px;
+}
+
+.contact_me_button {
+  background-color: #ff6b00;
+  color: white;
+  height: 48px;
+  gap: 10;
+  align-self: center;
+  padding: 12px 12px 12px 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  border: none;
+  letter-spacing: 0.03em;
+}
+
+#line_break {
+  background-color: #dfe1e6;
+  width: 375px;
+  margin-bottom: 15px;
+  align-self: center;
+}
+
+/* Footer Section */
+
+#footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#social_media_footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  list-style: none;
+  margin: 15px 88px 18px 88px;
+}
+
+#line_break1 {
+  height: 5px;
+  width: 134;
+  margin-bottom: 8px;
+  align-self: center;
 }
