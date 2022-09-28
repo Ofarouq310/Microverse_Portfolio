@@ -25,6 +25,10 @@ A website that showcases a lot of skills and hard work projects made by the deve
 
 - GitHub: [@Ofarouq310](https://github.com/Ofarouq310)
 
+👤 **Author2**
+
+- GitHub: [@telanet](https://github.com/telanet)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
