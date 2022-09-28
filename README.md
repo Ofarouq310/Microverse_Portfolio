@@ -17,6 +17,9 @@ A website that showcases a lot of skills and hard work projects made by the deve
 
 ![demo1](https://user-images.githubusercontent.com/102612396/192112867-976ff7cc-94e4-4efb-aa85-74855baa0137.JPG)
 
+![demo2](https://user-images.githubusercontent.com/102612396/192734045-0e5dfd52-ad35-499f-ada5-64e05991dfe1.JPG)
+
+
 
 
 ## Authors
