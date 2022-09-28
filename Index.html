@@ -13,22 +13,28 @@
   <link href="Styles.css" rel="stylesheet">
 
   <!-- Load Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&display=swap" rel="stylesheet">
+  <link href="https:/fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+  <link href='https:/fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href="https:/fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&display=swap" rel="stylesheet">
+  <link href="https:/fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
+<div id="wrapper">
+
+<!-- Header Section -->
 
   <header class="header_section">
-   <a href="file:///C:/Users/h/Desktop/Microverse%20Projects/Protfolio-Mobile-Setup/Index.html" id="name">Omar Farouq</a>
+   <a href="file:/C:/Users/h/Desktop/Microverse%20Projects/Protfolio-Mobile-Setup/Index.html" id="name">Omar Farouq</a>
    <nav>
-    <img src="Sources/Union.png" alt="Unicon vector" id="unicon">
+    <img src="Sources/Mobile/Union.png" alt="Unicon vector" id="unicon">
    </nav>
   </header>
 
   <main>
+
+
+<!-- Headline Section -->
 
     <section class="headline_section">
 
@@ -49,27 +55,29 @@
         </p>
 
       <ul class="social_media">
-        <li><a href="https://github.com/Ofarouq310"><img src="Sources/Github.png" alt="Github icon"></a></li>
-        <li><a href="https://www.linkedin.com/in/omarmf310/"><img src="Sources/Linkedin.png" alt="Linkedin icon"></a></li>
-        <li><a href="https://angel.co/u/ofarouq310"><img src="Sources/Angelist.png" alt="Angelist icon"></a></li>
-        <li><a href="https://twitter.com/ofarouq310"><img src="Sources/Twitter.png" alt="Twitter icon"></li></a>
-        <li><img src="Sources/Medium.png" alt="Medium icon"></li>
+        <li><a href="https:/github.com/Ofarouq310"><img src="Sources/Mobile/Github.png" alt="Github icon"></a></li>
+        <li><a href="https:/www.linkedin.com/in/omarmf310/"><img src="Sources/Mobile/Linkedin.png" alt="Linkedin icon"></a></li>
+        <li><a href="https:/angel.co/u/ofarouq310"><img src="Sources/Mobile/Angelist.png" alt="Angelist icon"></a></li>
+        <li><a href="https:/twitter.com/ofarouq310"><img src="Sources/Mobile/Twitter.png" alt="Twitter icon"></li></a>
+        <li><img src="Sources/Mobile/Medium.png" alt="Medium icon"></li>
       </ul>
 
     </section>
 
 
+<!-- Work and projects Section -->
+
     <section class="work">
 
     <div class="main_text">
       <h1 class="header">My Recent Works</h1>
-      <img src="Sources/Vector.png" id="break_line">
+      <img src="Sources/Mobile/Vector.png" id="break_line">
     </div>
 
     <div class="parent_grid">
       
       <div class="project1">
-        <img src="Sources/Img Placeholder1.png" id="first_placeholder">
+        <img src="Sources/Mobile/Img Placeholder1.png" id="first_placeholder">
         <h1 id="project1_header">Multi-Post Stories</h1>
         <p class="project1_description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
         <ul class="project1_tag_box">
@@ -163,7 +171,8 @@
 
     </section>
 
-    <!-- About Me Section -->
+
+<!-- About Me Section -->
 
     <section class="about_me">
       <h1 id="about_me_heading">About me</h1>
@@ -174,13 +183,13 @@
         don’t hestiate to contact me.
       </p>
       <button type="button" id="about_me_button" class="button_interactions">Get My Resume</button>
-      <img src="Sources/Vector 4.png" id="break_line2">
+      <img src="Sources/Mobile/Vector 4.png" id="break_line2">
     </section>
 
       <div class="my_skills">
       
       <ul class="skills_list">
-        <il><h3><img src="Sources/Rectangle 55.png"></img> Language</h3>
+        <il><h3><img src="Sources/Mobile/Rectangle 55.png"></img> Language</h3>
           <ul>
             <li>Javascript</li>
             <li>Ruby</li>
@@ -188,7 +197,7 @@
             <li>Css</li>
           </ul>
         </il>
-        <il><h3><img src="Sources/Rectangle 56.png"></img> Frameworks</h3>
+        <il><h3><img src="Sources/Mobile/Rectangle 56.png"></img> Frameworks</h3>
           <ul>
             <li>Bootstrap</li>
             <li>Ruby on Rails</li>
@@ -197,7 +206,7 @@
             <li>Selenium</li>
           </ul>
         </il>
-        <il><h3><img src="Sources/Rectangle 57.png"></img> Skills</h3>
+        <il><h3><img src="Sources/Mobile/Rectangle 57.png"></img> Skills</h3>
           <ul>
             <li>Codekit</li>
             <li>Github</li>
@@ -212,12 +221,44 @@
 
     </section>
 
-  
+
+<!-- Contact Me Section -->
+
+    <section class="contact_me">
+      <h1 id="contact_section_heading">
+        I'm always <br> interested in hearing about new projects, so if you'd like to chat please get in touch.
+      </h1>
+
+     <form id="form" action="https:/formspree.io/f/{form_id}" method="post">
+        <input type="text" name="name" id="full-name" maxlength="30" placeholder="Full name" required="" class="input">
+        <input type="email" name="_replyto" id="email-address" placeholder="Email address" required="" class="input">
+        <textarea name="message" id="message" maxlength="500" placeholder="Enter text here" required="" class="input"></textarea>
+        <button type="submit" class="contact_me_button button_interactions">Get in touch</button>
+      </form>
+     
+      <hr id="line_break">
+    </section>
+
+
+  <!-- Footer Section -->
     
-  <footer>
+  <footer id="footer">
+    <ul id="social_media_footer">
+      <li><a href="https:/github.com/Ofarouq310"><img src="Sources/Mobile/Github1.png" alt="Github icon"></a></li>
+      <li><a href="https:/www.linkedin.com/in/omarmf310/"><img src="Sources/Mobile/Linkedin1.png" alt="Linkedin icon"></a></li>
+      <li><a href="https:/angel.co/u/ofarouq310"><img src="Sources/Mobile/Angelist1.png" alt="Angelist icon"></a></li>
+      <li><a href="https:/twitter.com/ofarouq310"><img src="Sources/Mobile/Twitter1.png" alt="Twitter icon"></li></a>
+      <li><img src="Sources/Mobile/Medium1.png" alt="Medium icon"></li>
+    </ul>
     
+    <img src="Sources/Mobile/Shape.png" id= "line_break1">
+
   </footer>
+  
+
+
 <!-- Javdscript file added -->
 <!-- <script src="js/app.js"></script> -->
+</div>
 </body>
 </html>
