@@ -1,3 +1,5 @@
+/* Mobile First */
+
 /* Main Rules */
 
 * {
@@ -33,8 +35,24 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 12px 24px;
+}
+
+#nav_list {
+  color: #fff;
+  list-style: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#nav_list li {
+  padding: 0 32px 0 0;
 }
 
 #name {
@@ -44,42 +62,24 @@ body {
   font-size: 18px;
   line-height: 19px;
   text-decoration: none;
-  padding-left: 150px;
 }
 
-#nav_list {
-  color: #ffffff;
-  list-style: none;
-  font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 15px;
-line-height: 20px;
-display: flex;
-align-items: center;
-padding-right: 150px;
-}
-
-#nav_list li{
-  padding: 0px 32px 0px 0;
-}
-
-#mail_icon{
-  padding-top: 4px;
+.nav_icons {
+  display: none;
 }
 
 /* Headline Section */
 
 .headline_section {
   background-color: #1c1a19;
-  background-image: url(Sources/Desktop/Illustration-header.png);
+  background-image: url(Sources/Mobile/Group.png);
   background-repeat: no-repeat;
   background-position: bottom right;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 192px 600px 250px 160px;
-  gap: 24px;
+  padding: 120px 24px 0 24px;
+  gap: 20px;
 }
 
 #primary_text {
@@ -87,41 +87,42 @@ padding-right: 150px;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 69px;
-  line-height: 82px;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
 }
 
 #supporting_text {
   color: #fff5e1;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 31px;
-  line-height: 44px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 #description {
   color: #fff5e1;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 19px;
-  line-height: 32px;
-  padding-right: 60px;
-}
-
-#socialm_container{
-  position: absolute;
-  left: 36px;
-  top: 351px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .social_media {
-  list-style: none;  
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 130px;
+} 
+
+.social_media li {
+  display: inline;
 }
 
-
-/* Work Section */
+ /* Work Section */
 
 .main_text {
   display: flex;
@@ -449,3 +450,198 @@ padding-right: 150px;
   margin-bottom: 8px;
   align-self: center;
 }
+
+/* Desktop Version */
+
+@media only screen and (min-width: 768px) {
+  /* Header Section */
+
+  .header_section {
+    align-items: center;
+  }
+
+  #name {
+    padding-left: 150px;
+  }
+
+  #nav_list {
+    padding-right: 50px;
+  }
+
+  .nav_icons {
+    display: inline;
+  }
+
+  #mail_icon {
+    padding-top: 4px;
+  }
+
+  #unicon {
+    display: none;
+  }
+
+  /* Headline Section */
+
+  .headline_section {
+    background-color: #1c1a19;
+  background-image: url(Sources/Desktop/Illustration-header.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  padding: 192px 470px 250px 20px;
+    gap: 24px;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    }
+
+  #primary_text {
+    font-size: 69px;
+    line-height: 82px;
+    padding-bottom: 24px;
+  }
+
+  #supporting_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 44px;
+    padding-bottom: 24px;
+  }
+  
+  #description {
+    font-family: 'Inter', sans-serif;
+    font-size: 19px;
+    line-height: 32px;
+
+  }
+
+  .social_media {
+    flex-direction: column; 
+    padding-top: 80;  
+    padding-right: 50px;
+
+  } 
+
+  /* About Me Section */
+
+  .about_me {
+    background-color: #1c1a19;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 120px 700px 300px 142px;
+    gap: 24px;
+    background-image: url(Sources/Desktop/Frame\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 65%;
+  }
+  
+  #about_me_heading {
+    color: #ff6b00;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 82px;
+    letter-spacing: 0.37px;
+    text-align: left;
+  }
+  
+  #break_line2 {
+    display: none;
+  }
+  
+  #about_me_description {
+    color: #f4f5f7;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  
+  #about_me_button {
+    background: #ff6b00;
+    width: 161px;
+    height: 48px;
+    gap: 10;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    color: white;
+    border: none;
+  }
+  
+  .my_skills {
+    background-color: #1c1a19;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+  }
+  
+  .skills_list {
+    padding-bottom: 45px;
+  }
+  
+  .skills_list ul {
+    padding-bottom: 100px;
+  }
+  
+  .skills_list li {
+    list-style: none;
+    padding-top: 40px;
+  }
+
+
+  /* Contact Me Section */
+
+  .contact_me {
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 0;
+  }
+  
+  #contact_section_heading {
+    font-size: 40px;
+    line-height: 52px;
+    text-align: left;
+    padding-left: 150px;
+    padding-bottom: 100px;
+    margin-left: 50px;
+  }
+  
+  #form {
+    padding: 0px 60px 200px 190px;
+    align-items: flex-start;
+  }
+  
+  .input {
+    width: 500px;
+  }
+  
+  .contact_me_button{
+    align-self: inherit;
+  }
+
+  #line_break {
+    width: 1440px;    
+  }
+  
+  /* Footer Section */
+  
+  #line_break1 {
+    display: none;
+  }
+}
+
