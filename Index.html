@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Protfolio Mobile-setup</title>
+  <title>Protfolio</title>
 
   <!-- Load Styles' file -->
   <link href="Styles.css" rel="stylesheet">
@@ -20,16 +20,21 @@
 </head>
 
 <body>
-<div id="wrapper">
 
 <!-- Header Section -->
 
-  <header class="header_section">
-   <a href="file:/C:/Users/h/Desktop/Microverse%20Projects/Protfolio-Mobile-Setup/Index.html" id="name">Omar Farouq</a>
-   <nav>
-    <img src="Sources/Mobile/Union.png" alt="Unicon vector" id="unicon">
-   </nav>
-  </header>
+<header class="header_section">
+  <a href="file:///C:/Users/h/Desktop/Microverse%20Projects/Protfolio-Mobile-Setup/Index.html" id="name">Omar Farouq</a>
+  <nav>
+   <ul id="nav_list" >
+     <li class="nav_icons">Protfolio</li>
+     <li class="nav_icons">About</li>
+     <li class="nav_icons">Contact</li>
+     <li class="nav_icons"><img src="Sources/Desktop/Icon - Mail.png" alt="Mail vector" id="mail_icon"></li>
+     <li><img src="Sources/Mobile/Union.png" alt="Unicon vector" id="unicon"></li>
+    </ul>
+  </nav>
+ </header>
 
   <main>
 
@@ -37,7 +42,7 @@
 <!-- Headline Section -->
 
     <section class="headline_section">
-
+      <div class="headline_cont">
         <h1 id="primary_text">
           Hey There. <br/> I’m Omar
         </h1>
@@ -50,17 +55,19 @@
             I can help you build a product , feature 
             or website Look through some of my work
             and experience! If you like what you see
-            and have a project you need coded, 
+            and have a project you need coded,<br>
             don’t hestiate to contact me.
         </p>
+      </div>
 
-      <ul class="social_media">
-        <li><a href="https:/github.com/Ofarouq310"><img src="Sources/Mobile/Github.png" alt="Github icon"></a></li>
-        <li><a href="https:/www.linkedin.com/in/omarmf310/"><img src="Sources/Mobile/Linkedin.png" alt="Linkedin icon"></a></li>
-        <li><a href="https:/angel.co/u/ofarouq310"><img src="Sources/Mobile/Angelist.png" alt="Angelist icon"></a></li>
-        <li><a href="https:/twitter.com/ofarouq310"><img src="Sources/Mobile/Twitter.png" alt="Twitter icon"></li></a>
-        <li><img src="Sources/Mobile/Medium.png" alt="Medium icon"></li>
-      </ul>
+          <ul class="social_media">
+            <li><a href="https://github.com/Ofarouq310"><img src="Sources/Mobile/Github.png" alt="Github icon"></a></li>
+            <li><a href="https://www.linkedin.com/in/omarmf310/"><img src="Sources/Mobile/Linkedin.png" alt="Linkedin icon"></a></li>
+            <li><a href="https://angel.co/u/ofarouq310"><img src="Sources/Mobile/Angelist.png" alt="Angelist icon"></a></li>
+            <li><a href="https://twitter.com/ofarouq310"><img src="Sources/Mobile/Twitter.png" alt="Twitter icon"></li></a>
+            <li><img src="Sources/Mobile/Medium.png" alt="Medium icon"></li>
+          </ul>
+        
 
     </section>
 
@@ -76,10 +83,19 @@
 
     <div class="parent_grid">
       
-      <div class="project1">
-        <img src="Sources/Mobile/Img Placeholder1.png" id="first_placeholder">
+      <div class="project1 col-span">
+
+        <div id="desktop_placeholder">
+          <img src="Sources/Desktop/Img Placeholder (4).png">
+      </div>  
+
+      <div id="mobile_placeholder">
+          <img src="Sources/Mobile/Img Placeholder1.png">
+      </div>
+
+        <div class="project1_text">
         <h1 id="project1_header">Multi-Post Stories</h1>
-        <p class="project1_description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+        <p class="project1_description">A daily selection of privately personalized reads;<br> no accounts or sign-ups required.<br> has been the industry's standard dummy text ever<br> since the 1500s, when an unknown printer took a standard dummy text.</p>
         <ul class="project1_tag_box">
           <li class = "project1_box">css</li>
           <li class = "project1_box">html</li>
@@ -88,23 +104,26 @@
         </ul>
         <button type="button" class="project1_button button_interactions" >See Project</button>
       </div>
+      </div>
+      
+    
 
-      <div class="projects">
-        <h1 id="projects_header">Profesional Art Printing Data</h1>
-        <p class="projects_description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+      <div class="project2">
+        <h1 id="project2_header">Profesional Art Printing Data</h1>
+        <p class="project2_description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
         
-        <ul class="projects_tag_box">
-          <li class = "projects_box">html</li>
-          <li class = "projects_box">bootstrap</li>
-          <li class = "projects_box">Ruby</li>
+        <ul class="project2_tag_box">
+          <li class = "project2_box">html</li>
+          <li class = "project2_box">bootstrap</li>
+          <li class = "project2_box">Ruby</li>
         </ul>
     
-        <button type="button" class="projects_button button_interactions" >See Project</button>
+        <button type="button" class="project2_button button_interactions" >See Project</button>
       </div>
 
-      <div class="projects">
-        <h1 id="projects_header">Profesional Art Printing Data</h1>
-        <p class="projects_description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+      <div class="project3">
+        <h1 id="project3_header">Data Dashboard Healthcare</h1>
+        <p class="project3_description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
         
         <ul class="projects_tag_box">
           <li class = "projects_box">html</li>
@@ -112,12 +131,12 @@
           <li class = "projects_box">Ruby</li>
         </ul>
     
-        <button type="button" class="projects_button button_interactions" >See Project</button>
+        <button type="button" class="project3_button button_interactions" >See Project</button>
       </div>
 
-      <div class="projects">
-        <h1 id="projects_header">Profesional Art Printing Data</h1>
-        <p class="projects_description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+      <div class="project4">
+        <h1 id="project4_header">Website Protfolio</h1>
+        <p class="project4_description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
         
         <ul class="projects_tag_box">
           <li class = "projects_box">html</li>
@@ -125,12 +144,12 @@
           <li class = "projects_box">Ruby</li>
         </ul>
     
-        <button type="button" class="projects_button button_interactions" >See Project</button>
+        <button type="button" class="project4_button button_interactions" >See Project</button>
       </div>
 
-      <div class="projects">
-        <h1 id="projects_header">Profesional Art Printing Data</h1>
-        <p class="projects_description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+      <div class="project5">
+        <h1 id="project5_header">Profesional Art Printing Data</h1>
+        <p class="project5_description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
         
         <ul class="projects_tag_box">
           <li class = "projects_box">html</li>
@@ -138,12 +157,12 @@
           <li class = "projects_box">Ruby</li>
         </ul>
     
-        <button type="button" class="projects_button button_interactions" >See Project</button>
+        <button type="button" class="project5_button button_interactions" >See Project</button>
       </div>
 
-      <div class="projects">
-        <h1 id="projects_header">Profesional Art Printing Data</h1>
-        <p class="projects_description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+      <div class="project6">
+        <h1 id="project6_header">Data Dashboard Healthcare</h1>
+        <p class="project6_description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
         
         <ul class="projects_tag_box">
           <li class = "projects_box">html</li>
@@ -151,12 +170,12 @@
           <li class = "projects_box">Ruby</li>
         </ul>
     
-        <button type="button" class="projects_button button_interactions" >See Project</button>
+        <button type="button" class="project6_button button_interactions" >See Project</button>
       </div>
 
-      <div class="projects">
-        <h1 id="projects_header">Profesional Art Printing Data</h1>
-        <p class="projects_description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+      <div class="project7">
+        <h1 id="project7_header">Website Protfolio</h1>
+        <p class="project7_description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
         
         <ul class="projects_tag_box">
           <li class = "projects_box">html</li>
@@ -164,7 +183,7 @@
           <li class = "projects_box">Ruby</li>
         </ul>
     
-        <button type="button" class="projects_button button_interactions" >See Project</button>
+        <button type="button" class="project7_button button_interactions" >See Project</button>
       </div>
       
     </div>
@@ -183,50 +202,55 @@
         don’t hestiate to contact me.
       </p>
       <button type="button" id="about_me_button" class="button_interactions">Get My Resume</button>
-      <img src="Sources/Mobile/Vector 4.png" id="break_line2">
     </section>
+
+<!-- Skills Section -->
+
+      <section class="skills">
 
       <div class="my_skills">
-      
-      <ul class="skills_list">
-        <il><h3><img src="Sources/Mobile/Rectangle 55.png"></img> Language</h3>
-          <ul>
-            <li>Javascript</li>
-            <li>Ruby</li>
-            <li>Html</li>
-            <li>Css</li>
-          </ul>
-        </il>
-        <il><h3><img src="Sources/Mobile/Rectangle 56.png"></img> Frameworks</h3>
-          <ul>
-            <li>Bootstrap</li>
-            <li>Ruby on Rails</li>
-            <li>RSpec</li>
-            <li>CapyBara</li>
-            <li>Selenium</li>
-          </ul>
-        </il>
-        <il><h3><img src="Sources/Mobile/Rectangle 57.png"></img> Skills</h3>
-          <ul>
-            <li>Codekit</li>
-            <li>Github</li>
-            <li>Codepen</li>
-            <li>Gitlab</li>
-            <li>Terminal</li>
-          </ul>
-        </il>
-      </ul>
-      
-      </div>
 
-    </section>
+        <img src="Sources/Mobile/Vector 4.png" id="break_line2">
+
+        <ul class="skills_list">
+          <il><h3><img src="Sources/Mobile/Rectangle 55.png"></img> Language</h3>
+            <ul>
+              <li>Javascript</li>
+              <li>Ruby</li>
+              <li>Html</li>
+              <li>Css</li>
+            </ul>
+          </il>
+          <il><h3><img src="Sources/Mobile/Rectangle 56.png"></img> Frameworks</h3>
+            <ul>
+              <li>Bootstrap</li>
+              <li>Ruby on Rails</li>
+              <li>RSpec</li>
+              <li>CapyBara</li>
+              <li>Selenium</li>
+            </ul>
+          </il>
+          <il><h3><img src="Sources/Mobile/Rectangle 57.png"></img> Skills</h3>
+            <ul>
+              <li>Codekit</li>
+              <li>Github</li>
+              <li>Codepen</li>
+              <li>Gitlab</li>
+              <li>Terminal</li>
+            </ul>
+          </il>
+        </ul>
+        
+        </div>
+  
+      </section>
 
 
 <!-- Contact Me Section -->
 
     <section class="contact_me">
       <h1 id="contact_section_heading">
-        I'm always <br> interested in hearing about new projects, so if you'd like to chat please get in touch.
+        I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
       </h1>
 
      <form id="form" action="https:/formspree.io/f/{form_id}" method="post">
@@ -236,13 +260,14 @@
         <button type="submit" class="contact_me_button button_interactions">Get in touch</button>
       </form>
      
-      <hr id="line_break">
     </section>
 
 
   <!-- Footer Section -->
     
   <footer id="footer">
+    <hr id="line_break">
+
     <ul id="social_media_footer">
       <li><a href="https:/github.com/Ofarouq310"><img src="Sources/Mobile/Github1.png" alt="Github icon"></a></li>
       <li><a href="https:/www.linkedin.com/in/omarmf310/"><img src="Sources/Mobile/Linkedin1.png" alt="Linkedin icon"></a></li>
@@ -259,6 +284,5 @@
 
 <!-- Javdscript file added -->
 <!-- <script src="js/app.js"></script> -->
-</div>
 </body>
 </html>
