@@ -24,6 +24,13 @@ body {
   background-color: #f55800;
 }
 
+/* Animation Section */
+
+.animation {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
 /* Header Section */
 
 .header_section {
@@ -1177,5 +1184,25 @@ body {
   #description,
   #about_me_description {
     color: #a3a3a3;
+  }
+}
+
+/* Keyframes Section */
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
 }
