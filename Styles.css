@@ -713,3 +713,469 @@ body {
   margin-bottom: 8px;
   align-self: center;
 }
+
+/* Desktop Version */
+
+@media only screen
+  and (min-width: 768px) {
+  /* Header Section */
+
+  .header_section {
+    align-items: center;
+  }
+
+  #name {
+    padding-left: 150px;
+  }
+
+  .nav_list {
+    padding-right: 50px;
+  }
+
+  .nav_icons {
+    display: inline;
+  }
+
+  #mail_icon {
+    padding-top: 4px;
+  }
+
+  #unicon {
+    display: none;
+  }
+
+  /* Headline Section */
+
+  .headline_section {
+    background-color: #1c1a19;
+    background-image: url(Sources/Desktop/Illustration-header.png);
+    background-repeat: no-repeat;
+    background-position-x: 110%;
+    background-position-y: center;
+    padding: 192px 731px 250px 20px;
+    gap: 24px;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #primary_text {
+    font-size: 69px;
+    line-height: 82px;
+    padding-bottom: 24px;
+  }
+
+  #supporting_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 44px;
+    padding-bottom: 24px;
+  }
+
+  #description {
+    font-family: 'Inter', sans-serif;
+    font-size: 19px;
+    line-height: 32px;
+  }
+
+  .social_media {
+    flex-direction: column;
+    padding-top: 80;
+    padding-right: 50px;
+  }
+
+  /* Works Section */
+
+  .main_text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 135px 0 114px 0;
+  }
+
+  .header {
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    padding-top: 0;
+  }
+
+  #break_line {
+    width: 50%;
+    height: 1px;
+    padding: 0;
+    align-self: center;
+    padding-left: 24px;
+  }
+
+  .parent_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 50px;
+    column-gap: 24px;
+    padding: 0 141px 0 100px;
+    margin-bottom: 120px;
+  }
+
+  /* First project styles */
+
+  .col-span {
+    grid-column: span 3 / auto;
+  }
+
+  .project1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-bottom: 24px;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  #first_placeholder {
+    display: none;
+  }
+
+  #desktop_placeholder {
+    align-self: flex-start;
+    width: 100%;
+  }
+
+  .project1_text {
+    padding: 0;
+  }
+
+  #project1_header {
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    color: black;
+    padding: 24px 0 12px 0;
+  }
+
+  .project1_description {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #091e42;
+    padding-bottom: 12px;
+  }
+
+  /* Styles for the rest projects */
+
+  .project2 {
+    background-image: url(Sources/Desktop/Img\ Placeholder\ 3.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  #project2_header,
+  .project2_description,
+  .project2_tag_box,
+  .project2_box {
+    display: none;
+  }
+
+  .project2_button {
+    background: #ff6b00;
+    width: 100%;
+    height: 48px;
+    gap: 10;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    color: white;
+    border: none;
+  }
+
+  .project3 {
+    background-image: url(Sources/Desktop/Img\ Placeholder\ 1.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  #project3_header {
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: rgb(255, 255, 255);
+    padding: 84px 16px 12px 16px;
+  }
+
+  .project3_description {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    padding: 0 16px 30px 16px;
+  }
+
+  .project3_button {
+    display: none;
+  }
+
+  .project4 {
+    background-image: url(Sources/Desktop/Img\ Placeholder\ 2.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 45px;
+  }
+
+  #project4_header {
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: rgb(255, 255, 255);
+    padding: 84px 16px 12px 16px;
+  }
+
+  .project4_description {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    padding: 0 16px 30px 16px;
+  }
+
+  .project4_button {
+    display: none;
+  }
+
+  .project5 {
+    background-image: url(Sources/Desktop/Img\ Placeholder2.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  #project5_header {
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: rgb(255, 255, 255);
+    padding: 84px 16px 12px 16px;
+  }
+
+  .project5_description {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    padding: 0 16px 30px 16px;
+  }
+
+  .project5_button {
+    display: none;
+  }
+
+  .project6 {
+    background-image: url(Sources/Desktop/Img\ Placeholder\ 1.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  #project6_header {
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: rgb(255, 255, 255);
+    padding: 84px 16px 12px 16px;
+  }
+
+  .project6_description {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    padding: 0 16px 30px 16px;
+  }
+
+  .project6_button {
+    display: none;
+  }
+
+  .project7 {
+    background-image: url(Sources/Desktop/Img\ Placeholder\ 2.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 45px;
+  }
+
+  #project7_header {
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: rgb(255, 255, 255);
+    padding: 84px 16px 12px 16px;
+  }
+
+  .project7_description {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    padding: 0 16px 30px 16px;
+  }
+
+  .project7_button {
+    display: none;
+  }
+
+  .projects_tag_box,
+  .projects_box {
+    display: inline;
+  }
+
+  /* About Me Section */
+
+  .about_me {
+    padding: 120px 624px 140px 142px;
+    gap: 24px;
+    background-image: url(Sources/Desktop/Frame1.png);
+    background-position-y: 35%;
+  }
+
+  #about_me_heading {
+    text-align: left;
+  }
+
+  #about_me_description {
+    padding: 0 142px 24px 0;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  /* Skills Section */
+
+  #break_line2 {
+    width: 100%;
+    height: 1px;
+    align-self: center;
+    margin-bottom: 140px;
+  }
+
+  .my_skills {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    padding: 0 140px 140px 140px;
+  }
+
+  .skills_list {
+    padding-bottom: 45px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+
+  /* Contact Me Section */
+
+  .contact_me {
+    flex-direction: row;
+    justify-content: center;
+    padding: 130px 140px 130px 135px;
+    gap: 24px;
+  }
+
+  #contact_section_heading {
+    font-size: 45px;
+    line-height: 52px;
+    text-align: left;
+    padding: 0 0 100px 29px;
+  }
+
+  #form {
+    padding: 0;
+    align-items: flex-start;
+  }
+
+  .input {
+    width: 500px;
+  }
+
+  .contact_me_button {
+    align-self: inherit;
+  }
+
+  #line_break {
+    width: 90%;
+  }
+
+  /* Footer Section */
+
+  #social_media_footer {
+    margin: 0;
+  }
+
+  #line_break1 {
+    display: none;
+  }
+}
+
+@media only screen
+  and (max-width: 839px) {
+  #supporting_text,
+  #description,
+  #about_me_description {
+    color: #a3a3a3;
+  }
+}
