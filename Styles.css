@@ -844,13 +844,15 @@ body {
     gap: 24px;
   }
 
-  #first_placeholder {
+  #mobile_placeholder {
     display: none;
   }
 
   #desktop_placeholder {
+    display: contents;
     align-self: flex-start;
-    width: 100%;
+    width: 90%;
+    height: auto;
   }
 
   .project1_text {
