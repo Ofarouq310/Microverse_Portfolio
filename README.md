@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Protfolio
-Protfolio: Mobile-Setup
+# Portfolio
+Portfolio: Mobile-Setup
 
 > Description the project.
 A website that showcases a lot of skills and hard work projects made by the developer, in addition to a piece of information about him with contact details.
