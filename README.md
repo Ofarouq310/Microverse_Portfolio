@@ -26,7 +26,7 @@ A website that showcases a lot of skills and hard work projects made by the deve
 ## Getting Started
 
 ### Deployment
-https://ofarouq310.github.io/
+https://ofarouq310.github.io/Portfolio/
 
 
 ## Authors
