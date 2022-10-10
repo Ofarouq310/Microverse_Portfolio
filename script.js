@@ -15,4 +15,4 @@ for(let i = 0; i < menuItems.length; i + 1){
   menuItems[i].addEventListener('click', () => {
     mbMenu.style.display = 'none'; 
   });
-}
+} 
