@@ -89,10 +89,9 @@ body {
 
 .mb_menu {
   background-color: #3c3a39;
-  position: absolute;
-  top: 0;
-
-  /* left: 100%; */
+  position: fixed;
+  width: 100vh;
+  height: 100vh;
   display: none;
   padding-right: 1px;
 }
