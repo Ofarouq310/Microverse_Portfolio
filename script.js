@@ -8,11 +8,11 @@ hamburger.addEventListener('click', () => {
 });
 
 cross.addEventListener('click', () => {
-    mbMenu.style.display = 'none';
+  mbMenu.style.display = 'none';
 });
 
-for(let i = 0; i < menuItems.length; i + 1){
+for (let i = 0; i < menuItems.length; i += 1) {
   menuItems[i].addEventListener('click', () => {
-    mbMenu.style.display = 'none'; 
+    mbMenu.style.display = 'none';
   });
-} 
+}
