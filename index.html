@@ -24,20 +24,30 @@
 <!-- Header Section -->
 
 <header class="header_section">
-  <a href="file:///C:/Users/h/Desktop/Microverse%20Projects/Protfolio-Mobile-Setup/Index.html" id="name">Omar Farouq</a>
+  <a href="file:///C:/Users/h/Desktop/Microverse%20Projects/Portfolio/index.html" id="name">Omar Farouq</a>
   <nav>
    <ul class="nav_list">
-     <li class="nav_icons">Protfolio</li>
-     <li class="nav_icons">About</li>
-     <li class="nav_icons">Contact</li>
+     <li class="nav_icons"><a href="#Portfolio">Portfolio</a></li>
+     <li class="nav_icons"><a href="#About">About</a></li>
+     <li class="nav_icons"><a href="#Contact">Contact</a></li>
      <li class="nav_icons"><img src="Sources/Desktop/Icon - Mail.png" alt="Mail vector" id="mail_icon"></li>
-     <li><img src="Sources/Mobile/Union.png" alt="Unicon vector" id="unicon"></li>
+     <li><img src="Sources/Mobile/Union.png" alt="Hamburger vector" id="hamburger"></li>
     </ul>
   </nav>
  </header>
 
-  <main>
+ <!-- Mobile pop-up menu -->
+ 
+ <div class="mb_menu">
+  <img src="Sources/Mobile/X.png" alt="x icon" id="x_icon">
+  <ul class="menu_list">
+     <li><a href="#Portfolio" class="menu_list_items">Portfolio</a></li>
+     <li><a href="#About" class="menu_list_items">About</a></li>
+     <li><a href="#Contact" class="menu_list_items">Contact</a></li>
+  </ul>
+</div>
 
+  <main>
 
 <!-- Headline Section -->
 
@@ -75,7 +85,7 @@
 
 <!-- Work and projects Section -->
 
-    <section class="work">
+    <section class="work" id="Portfolio">
 
     <div class="main_text">
       <h1 class="header">My Recent Works</h1>
@@ -194,7 +204,7 @@
 
 <!-- About Me Section -->
 
-    <section class="about_me">
+    <section class="about_me" id="About">
       <h1 id="about_me_heading" class="animation">About me</h1>
       <p id="about_me_description">
         Hello I’m a software developer! I can help you build a product ,
@@ -249,7 +259,7 @@
 
 <!-- Contact Me Section -->
 
-    <section class="contact_me">
+    <section class="contact_me" id="Contact">
       <h1 id="contact_section_heading" class="animation">
         I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
       </h1>
@@ -284,6 +294,6 @@
 
 
 <!-- Javdscript file added -->
-<!-- <script src="js/app.js"></script> -->
+<script src="script.js"></script>
 </body>
 </html>
