@@ -200,7 +200,17 @@ body {
 
 .parent_grid {
   display: grid;
-  grid-template-rows: 586px repeat(6, 386px);
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  row-gap: 50px;
+  column-gap: 24px;
+  padding: 0 24px 0 24px;
+  margin-bottom: 120px;
+}
+
+.parent_grid2 {
+  display: grid;
+  grid-template-rows: repeat(7, 386px);
   grid-row-gap: 24px;
   padding: 0 24px 0 24px;
   margin-bottom: 120px;
@@ -219,7 +229,11 @@ body {
 }
 
 #desktop_placeholder {
-  display: none;
+  display: block;
+}
+
+#desktop_img {
+  width: 100%;
 }
 
 #project1_header {
@@ -276,7 +290,7 @@ body {
 /* Styles for the rest projects */
 
 .projects {
-  background-image: url(Sources/Mobile/Img\ Placeholder2.png);
+  /* background-image: url(Sources/Mobile/Img\ Placeholder2.png); */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -318,7 +332,7 @@ body {
 }
 
 .project2 {
-  background-image: url(Sources/Desktop/Img\ Placeholder\ 3.png);
+  background-image: url(Sources/Desktop/Img\ Placeholder2.png);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -331,7 +345,7 @@ body {
 .project2_description,
 .project2_tag_box,
 .project2_box {
-  display: none;
+  display: block;
 }
 
 .project2_button {
@@ -350,7 +364,7 @@ body {
 }
 
 .project3 {
-  background-image: url(Sources/Desktop/Img\ Placeholder\ 1.png);
+  background-image: url(Sources/Desktop/Img\ Placeholder2.png);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -439,7 +453,7 @@ body {
 }
 
 .project5 {
-  background-image: url(Sources/Mobile/Img\ Placeholder2.png);
+  background-image: url(Sources/Desktop/Img\ Placeholder2.png);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -527,7 +541,7 @@ body {
 }
 
 .project7 {
-  background-image: url(Sources/Desktop/Img\ Placeholder\ 2.png);
+  background-image: url(Sources/Desktop/Img\ Placeholder2.png);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -585,6 +599,225 @@ body {
   background-color: rgba(255, 255, 255, 0.24);
   color: white;
 }
+
+#popup-wrap {
+  transition: all 0.2s ease-in-out;
+}
+
+.content-card-wrap {
+  /* display: none; */
+  display: flex;
+  z-index: 12;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(3px);
+}
+
+.close-button {
+  position: relative;
+  left: 97%;
+}
+
+.content-card {
+  padding: 16px;
+  height: 90%;
+  width: 90%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+}
+
+@media (min-width: 769px) {
+  .content-card {
+    width: 80%;
+    height: 80%;
+    padding: 2.5%;
+  }
+}
+
+.cc-h-wrap {
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+@media (min-width: 769px) {
+  .cc-h-wrap {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.card-h {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.card-lang-wrapper {
+  list-style: none;
+  display: flex;
+}
+
+.card-lang-wrapper li {
+  padding: 8px 12px;
+  border: 1px solid rgba(137, 147, 164, 1);
+  margin-right: 12px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  color: rgb(60, 58, 57);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 769px) {
+  .card-lang-wrapper li {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+@media (min-width: 769px) {
+  .card-content {
+    display: grid;
+    grid-template-columns: 51% 45%;
+    height: 50%;
+  }
+}
+
+.project-img-w {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+}
+
+@media (min-width: 769px) {
+  .project-img-w {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-img {
+    width: 80%;
+  }
+}
+
+.card-img-w {
+  width: max-content;
+}
+
+@media (min-width: 769px) {
+  .card-img {
+    width: 85%;
+  }
+}
+
+@media (min-width: 769px) {
+  .project-img {
+    width: 100%;
+  }
+}
+
+.card-cb-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+@media (min-width: 768px) {
+  .card-cb-wrap {
+    gap: 10px;
+  }
+}
+
+@media (min-width: 1127px) {
+  .card-cb-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.card-p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: rgb(52, 69, 99);
+  max-height: 50%;
+  overflow: hidden;
+}
+
+@media (min-width: 769px) {
+  .card-p {
+    max-height: none;
+  }
+}
+
+.card-b-wrap {
+  display: flex;
+  gap: 20px;
+}
+
+.card-button {
+  background-color: rgb(255, 107, 0, 1);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding: 12px;
+  border: 1px solid #f55800;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  transition-duration: 0.15s;
+}
+
+@media (min-width: 769px) {
+  .card-button {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.card-button:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.card-button:active {
+  background: rgb(224, 83, 4);
+  border: 1px solid #f55800;
+  color: white;
+}
+
+.card-button:disabled {
+  background: rgb(224, 241, 240);
+  border: 1px solid rgb(224, 241, 240);
+  color: rgb(91, 89, 87);
+}
+
 
 /* About me Section */
 
@@ -872,8 +1105,18 @@ body {
 
   .parent_grid {
     display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    row-gap: 50px;
+    column-gap: 24px;
+    padding: 0 141px 0 100px;
+    margin-bottom: 120px;
+  }
+
+  .parent_grid2 {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     row-gap: 50px;
     column-gap: 24px;
     padding: 0 141px 0 100px;
@@ -893,10 +1136,6 @@ body {
     padding-bottom: 24px;
     justify-content: center;
     gap: 24px;
-  }
-
-  #desktop_placeholder {
-    display: none;
   }
 
   .project1_text {
@@ -926,7 +1165,7 @@ body {
   /* Styles for the rest projects */
 
   .project2 {
-    background-image: url(Sources/Desktop/Img\ Placeholder\ 3.png);
+    background-image: url(Sources/Desktop/Img\ Placeholder2.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -958,7 +1197,7 @@ body {
   }
 
   .project3 {
-    background-image: url(Sources/Desktop/Img\ Placeholder\ 1.png);
+    background-image: url(Sources/Desktop/Img\ Placeholder2.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -986,12 +1225,12 @@ body {
     padding: 0 16px 30px 16px;
   }
 
-  .project3_button {
+  /* .project3_button {
     display: none;
-  }
+  } */
 
   .project4 {
-    background-image: url(Sources/Desktop/Img\ Placeholder\ 2.png);
+    background-image: url(Sources/Desktop/Img\ Placeholder\ 3.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -1025,7 +1264,7 @@ body {
   }
 
   .project5 {
-    background-image: url(Sources/Desktop/Img\ Placeholder2.png);
+    background-image: url(Sources/Desktop/Img\ Placeholder\ 3.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -1058,7 +1297,7 @@ body {
   }
 
   .project6 {
-    background-image: url(Sources/Desktop/Img\ Placeholder\ 1.png);
+    background-image: url(Sources/Desktop/Img\ Placeholder\ 3.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -1091,7 +1330,7 @@ body {
   }
 
   .project7 {
-    background-image: url(Sources/Desktop/Img\ Placeholder\ 2.png);
+    background-image: url(Sources/Desktop/Img\ Placeholder\ 3.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
