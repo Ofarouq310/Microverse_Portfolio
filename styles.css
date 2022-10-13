@@ -626,7 +626,7 @@ body {
 .content-card {
   padding: 16px;
   height: 90%;
-  width: 90%;
+  width: 100vw;
   background: white;
   display: flex;
   flex-direction: column;
@@ -647,7 +647,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 25px;
 }
 
 @media (min-width: 769px) {
@@ -696,7 +695,7 @@ body {
 @media (min-width: 769px) {
   .card-content {
     display: grid;
-    grid-template-columns: 51% 45%;
+    grid-template-columns: 60% 40%;
     height: 50%;
   }
 }
@@ -717,17 +716,17 @@ body {
 
 @media (max-width: 768px) {
   .card-img {
-    width: 80%;
+    width: 70%;
   }
 }
 
-.card-img-w {
+/* .card-img-w {
   width: max-content;
-}
+} */
 
 @media (min-width: 769px) {
   .card-img {
-    width: 85%;
+    width: 100%;
   }
 }
 
@@ -762,8 +761,6 @@ body {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   color: rgb(52, 69, 99);
-  max-height: 50%;
-  overflow: hidden;
 }
 
 @media (min-width: 769px) {
