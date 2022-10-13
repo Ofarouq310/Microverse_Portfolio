@@ -1,27 +1,27 @@
-/* eslint-disable max-len */
 const hamburger = document.querySelector('#hamburger');
-const cross = document.querySelector('.close-button');
-const navWBtn = document.getElementsByClassName('nav-w-btn');
+const mbMenu = document.querySelector('.mb_menu');
+const cross = document.querySelector('#x_icon');
+const menuItems = document.getElementsByClassName('menu_list_items');
 
 hamburger.addEventListener('click', () => {
-  document.getElementById('nav-wrap').style.left = 0;
+  mbMenu.style.display = 'block';
 });
 
 cross.addEventListener('click', () => {
-  document.getElementById('nav-wrap').style.left = '100%';
+  mbMenu.style.display = 'none';
 });
 
-for (let i = 0; i < navWBtn.length; i += 1) {
-  navWBtn[i].addEventListener('click', () => {
-    document.getElementById('nav-wrap').style.left = '100%';
+for (let i = 0; i < menuItems.length; i += 1) {
+  menuItems[i].addEventListener('click', () => {
+    mbMenu.style.display = 'none';
   });
 }
 
 // dynamic preview-cards
 const cards = [{
-  title: 'Art Printing Data2',
-  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-  img: './Images/card-img.svg',
+  title: 'Multi-Post Stories',
+  description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.",
+  img: 'Sources/Desktop/Snapshoot Portfolio.png',
   tech1: 'html',
   tech2: 'css',
   tech3: 'bootstrap',
@@ -30,40 +30,41 @@ const cards = [{
 
 },
 {
-  title: 'Art Printing Data3',
+  title: 'Art Printing Data 1',
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-  img: './Images/card-img.svg',
+  img: 'Sources/Desktop/Snapshoot Portfolio.png',
   tech1: 'html',
   tech2: 'css',
   tech3: 'bootstrap',
   btnText: 'See card',
   id: 1,
+
 },
 {
-  title: 'Art Printing Data4',
+  title: 'Art Printing Data 2',
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-  img: './Images/card-img.svg',
+  img: 'Sources/Desktop/Snapshoot Portfolio.png',
   tech1: 'html',
   tech2: 'css',
   tech3: 'bootstrap',
   btnText: 'See card',
   id: 2,
-
 },
 {
-  title: 'Art Printing Data5',
+  title: 'Art Printing Data 3',
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-  img: './Images/card-img.svg',
+  img: 'Sources/Desktop/Snapshoot Portfolio.png',
   tech1: 'html',
   tech2: 'css',
   tech3: 'bootstrap',
   btnText: 'See card',
   id: 3,
+
 },
 {
-  title: 'Art Printing Data6',
+  title: 'Art Printing Data 4',
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-  img: './Images/card-img.svg',
+  img: 'Sources/Desktop/Snapshoot Portfolio.png',
   tech1: 'html',
   tech2: 'css',
   tech3: 'bootstrap',
@@ -71,57 +72,63 @@ const cards = [{
   id: 4,
 },
 {
-  title: 'Art Printing Data7',
+  title: 'Art Printing Data 5',
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-  img: './Images/card-img.svg',
+  img: 'Sources/Desktop/Snapshoot Portfolio.png',
   tech1: 'html',
   tech2: 'css',
   tech3: 'bootstrap',
   btnText: 'See card',
   id: 5,
 },
+{
+  title: 'Art Printing Data 6',
+  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+  img: 'Sources/Desktop/Snapshoot Portfolio.png',
+  tech1: 'html',
+  tech2: 'css',
+  tech3: 'bootstrap',
+  btnText: 'See card',
+  id: 6,
+},
 ];
 
 function displayCards() {
   let result = '';
 
-  cards.forEach((card) => {
-    result += `<div class="simple-post">
-      <div class="sp-content">
-        <div class="sp-h-wrapper">
-          <h3>${card.title}</h3>
-        </div>
-        <p>${card.description}</p>
-        <ul class="sp-lang-wrapper"> 
-          <li>${card.tech1}</li> 
-          <li>${card.tech2}</li> 
-          <li>${card.tech3}</li>
-        </ul>
-      </div>
-      <a class="sp-link">
-      <button class="sp-button card-btn-open">${card.btnText}</button>
-      </a>
-    </div>`;
+  cards.filter((card) => card.id > 0).forEach((card) => {
+    result += `
+  
+   <div class="project3">
+   <h1 id="project3_header">${card.title}</h1>
+   <p class="project3_description">${card.description}</p>
+   
+   <ul class="projects_tag_box">
+     <li class = "projects_box">${card.tech1}</li>
+     <li class = "projects_box">${card.tech2}</li>
+     <li class = "projects_box">${card.tech3}</li>
+   </ul>
+
+   <button type="button" class="project3_button button_interactions" >${card.btnText}</button>
+ </div>`;
   });
 
-  document.getElementById('simple-posts-wrapper').innerHTML = result;
+  document.querySelector('.parent_grid2').innerHTML = result;
 }
 
 displayCards();
-
-// Opening the window 
-const btn = document.getElementsByClassName('card-btn-open');
-let popUpWrapper = document.getElementById('pop_up_wrapper');
-let res = '';
+// Opening the window
+const btn = document.getElementsByClassName('project3_button');
+const popUpWrapper = document.getElementById('popup-wrapper');
+// let res = '';
 cards.forEach((card) => {
-for (let i = 0; i < btn.length; i += 1) {
-  btn[i].addEventListener('click', () => {
-    if(i == card.id){
-      popUpWrapper.style.display = 'block';
-      res += 
-        `<div class="content-card-wrap">
+  for (let i = 0; i < btn.length; i += 1) {
+    btn[i].addEventListener('click', () => {
+      if (i === ((card.id))) {
+        popUpWrapper.style.display = 'block';
+        const res = `<div class="content-card-wrap">
          <div class="content-card">
-          <div class="close-button card-x"><img src="./Images/X-d.svg" alt="X"></div>
+          <div class="close-button card-x"><img src="Sources/Desktop/Icon - Cancel.png" alt="X"></div>
           <div class="cc-h-wrap">
             <h2 class="card-h">${card.title}</h2>
             <ul class="card-lang-wrapper">
@@ -140,10 +147,10 @@ for (let i = 0; i < btn.length; i += 1) {
               </p>
               <div class="card-b-wrap">
                 <a class="card-link">
-                  <button class="card-button">See Live<img src="./Images/card-icon.svg" alt="" class="card-i"></button>
+                  <button class="card-button">See Live<img src="Sources/Desktop/Frame.png" alt="" class="card-i"></button>
                 </a>
                 <a class="card-link">
-                  <button class="card-button">See Source<img src="./Images/github-w.svg" alt=""></button>
+                  <button class="card-button">See Source<img src="Sources/Desktop/Icon-see live.png" alt=""></button>
                 </a>
               </div>
             </div>
@@ -151,20 +158,16 @@ for (let i = 0; i < btn.length; i += 1) {
         </div>
         </div>`;
 
-       popUpWrapper.innerHTML = res;
+        popUpWrapper.innerHTML = res;
 
-
-    // close the card
-
-    const cardX = document.getElementsByClassName('card-x');
-     for(let j = 0; j < cardX.length; j += 1){
-       cardX[j].addEventListener('click', () => {
-       popUpWrapper.style.display = 'none';
-});
-}
-
-    } 
-  });
-}
-
+        // close the card
+        const cardX = document.getElementsByClassName('card-x');
+        for (let j = 0; j < cardX.length; j += 1) {
+          cardX[j].addEventListener('click', () => {
+            popUpWrapper.style.display = 'none';
+          });
+        }
+      }
+    });
+  }
 });
