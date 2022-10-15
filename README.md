@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-https://ofarouq310.github.io/Portfolio/
+https://ofarouq310.github.io/Microverse_Portfolio/
 
 ## Live Screenshots
 
