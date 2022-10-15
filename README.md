@@ -64,7 +64,7 @@ Give a ⭐️ if you like this project!
 
 
 ## Acknowledgments
-- Project recreaated from Figma's [tempelate](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=1%3A1471).
+- Project recreated from Figma [tempelate](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=1%3A1471).
 - Hat off to [@telanet](https://github.com/telanet) for contributing to this project.
 
 
