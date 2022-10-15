@@ -1,18 +1,21 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Portfolio
-Portfolio: Mobile-Setup
 
-> Description the project.
-A website that showcases a lot of skills and hard work projects made by the developer, in addition to a piece of information about him with contact details.
+> A website that showcases a lot of skills and hard work projects made by the developer, in addition to a piece of information about him with contact details.
 
 
 ## Built With
 
-- Major languages (HTML, CSS)
+- Major languages (HTML5, CSS3, Javascript)
+- Linters
 
 
 ## Live Demo
+
+https://ofarouq310.github.io/Portfolio/
+
+## Live Screenshots
 
 ![demo](https://user-images.githubusercontent.com/102612396/191850624-8d8c1717-a55a-41ea-a002-bc4126ea133b.JPG)
 
@@ -24,18 +27,26 @@ A website that showcases a lot of skills and hard work projects made by the deve
 
 
 ## Getting Started
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+- A web browser (like Google Chrome, Opera...).
+- A code editor (like Atom, VScode...).
+
+### Setup
+To setup the webpage locally: click on "Code" (dropdown list) then "Download ZIP", or clone it using Git or VScode terminal or CMD.
 
 ### Deployment
-https://ofarouq310.github.io/Portfolio/
+To run the project open the downloaded folder (after extraction) then run the "index.html" file in your browser.
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Omar Farouq**
 
 - GitHub: [@Ofarouq310](https://github.com/Ofarouq310)
 
-👤 **Author2**
+👤 **Benard Ngetich**
 
 - GitHub: [@telanet](https://github.com/telanet)
 
@@ -54,9 +65,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Hat off to [@telanet](https://github.com/telanet) for contributing to this project.
 
 
 ## 📝 License
