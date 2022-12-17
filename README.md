@@ -1,47 +1,100 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+<a name="readme-top"></a>
 
-# Portfolio
+<div align="center">
 
-> A website that showcases a lot of skills and hard work projects made by the developer, in addition to a piece of information about him with contact details.
+  <img src="https://github.com/Ofarouq310/Microverse_readme-template/blob/master/murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
+
+</div>
+
+<!-- TABLE OF CONTENTS -->
+
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
+
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 Portfolio <a name="about-project"></a>
+
+- "Portfolio" A website that showcases a lot of skills and hard work projects made by the developer, in addition to a piece of information about him with contact details.
 
 
-## Built With
+## 🛠 Built With <a name="built-with"></a>
 
-- Major languages (HTML5, CSS3, Javascript)
-- Linters
+### Tech Stack <a name="tech-stack"></a>
 
-
-## Live Demo
-
-https://ofarouq310.github.io/Microverse_Portfolio/
-
-
-## Live Screenshots
-
-![demo](https://user-images.githubusercontent.com/102612396/191850624-8d8c1717-a55a-41ea-a002-bc4126ea133b.JPG)
-
-![demo1](https://user-images.githubusercontent.com/102612396/192112867-976ff7cc-94e4-4efb-aa85-74855baa0137.JPG)
-
-![demo2](https://user-images.githubusercontent.com/102612396/192734045-0e5dfd52-ad35-499f-ada5-64e05991dfe1.JPG)
-
-![Demo](https://user-images.githubusercontent.com/102612396/192741085-d95c8177-5271-4c0d-9fab-cfd37c071fbe.JPG)
+<details>
+  <summary>Languages</summary>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+  </ul>
+</details>
 
 
-## Getting Started
-To get a local copy up and running follow these simple example steps.
+<details>
+  <summary>Technologies</summary>
+  <ul>
+    <li>Linters</li>
+  </ul>
+</details>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://ofarouq310.github.io/Microverse_Portfolio/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
-- A web browser (like Google Chrome, Opera...).
-- A code editor (like Atom, VScode...).
+
+- Use `git clone` to clone the repository using the HTTPS link into your local machine
 
 ### Setup
-To setup the webpage locally: click on "Code" (dropdown list) then "Download ZIP", or clone it using Git or VScode terminal or CMD.
+
+- `cd` into your local repository
+
+### Install
+
+- `npm install` - Installs the necessary dependencies
+
+### Usage
+
+- `npm run build` - Builds development files into production code
 
 ### Deployment
-To run the project open the downloaded folder (after extraction) then run the "index.html" file in your browser.
 
+- `npm start` - Starts the development server
 
-## Authors
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
 
 👤 **Omar Farouq**
 
@@ -49,28 +102,46 @@ To run the project open the downloaded folder (after extraction) then run the "i
 - Twitter: [@Ofaouq310](https://twitter.com/ofarouq310)
 - LinkedIn: [@Ofarouq310](https://www.linkedin.com/in/Ofarouq310/)
 
-👤 **Benard Ngetich**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- GitHub: [@telanet](https://github.com/telanet)
+<!-- FUTURE FEATURES -->
 
+## 🔭 Future Features <a name="future-features"></a>
 
-## 🤝 Contributing
+- [ ] [New styles will be implemented]
 
-Contributions, issues, and feature requests are welcome!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Feel free to check the [issues page](../../issues/).
+<!-- CONTRIBUTING -->
 
+## 🤝 Contributing <a name="contributing"></a>
 
-## Show your support
+- Contributions, issues, and feature requests are welcome!
 
-Give a ⭐️ if you like this project!
+- Feel free to check the [issues page](../../issues/).
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Acknowledgments
-- Project recreated from [Figma template](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=1%3A1471).
-- Hat off to [@telanet](https://github.com/telanet) for contributing to this project.
+<!-- SUPPORT -->
 
+## ⭐️ Show your support <a name="support"></a>
 
-## 📝 License
+- If you like this project, please feel free to give a ⭐.
 
-This project is [MIT](./LICENSE) licensed.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+- All thankfulness to Microverse for equipping me with such skills to utilize in real-world projects and applications. 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+- This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
